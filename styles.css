@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: lightblue;
+  --secondary-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.app-name {
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links span {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #34495e;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 20px;
+  box-sizing: border-box;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.note {
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated styles for displayed content */
+.note p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+.note {
+  /* ... (unchanged) */
+  position: relative;
+}
+
+.expand-arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: white;
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.content-visible {
+  transform: rotate(90deg); /* Rotate arrow when content is visible */
+}
+.note {
+  /* ... (unchanged) */
+  position: relative;
+}
+
+.expand-arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 50%;
+  background-color: #3498db; /* Background color for the circular highlight */
+  padding: 5px; /* Adjust padding as needed */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.arrow-icon {
+  transform: rotate(90deg); /* Rotate arrow initially */
+}
+
+.content-visible .arrow-icon {
+  transform: rotate(0deg); /* Rotate arrow when content is visible */
+}

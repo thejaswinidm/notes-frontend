@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' * ">
+    <title>Note Taking App</title>
+    <script src="https://classmate-ai.s3.amazonaws.com/notes.js"></script>
+    <link rel="stylesheet" href="https://classmate-ai.s3.amazonaws.com/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="app-name">Classmate.ai</h1>
+                <ul class="nav-links">
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/home.html">Home</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/notes.html">Notes</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/events.html">Events</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/upload.html">Upload</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/mcqs.html">MCQs</a></li>
+                    <li><span id="userName"></span></li>
+                    <li><a href="#" onclick='logout()'>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <label for="noteId">Note name:</label>
+    <input type="text" id="noteId">
+
+    <label for="content">Content:</label>
+    <textarea id="content"></textarea>
+
+    <button onclick="createNote()">Create Note</button>
+    <button onclick="deleteNote()">Delete Note</button>
+    <button onclick="updateNote()">Update Note</button>
+    <button onclick="viewAllNotes()">View All Notes</button>
+
+    <div id="result"></div>
+
+</body>
+</html>

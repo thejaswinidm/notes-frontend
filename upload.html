@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="https://classmate-ai.s3.amazonaws.com/styles.css">
+    <script src="https://classmate-ai.s3.amazonaws.com/upload.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="app-name">Classmate.ai</h1>
+                <ul class="nav-links">
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/home.html">Home</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/notes.html">Notes</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/events.html">Events</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/upload.html">Upload</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/mcqs.html">MCQs</a></li>
+                    <li><span id="userName"></span></li>
+                    <li><a href="#" onclick='logout()'>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="uploadSection">
+        <input type="file" id="fileUpload">
+        <input type="text" id="fileTitle" placeholder="Enter Labels">
+        <button onclick="uploadAudio()">Upload File</button>
+    </div>
+</body>

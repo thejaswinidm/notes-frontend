@@ -1,0 +1,62 @@
+<head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link rel="stylesheet" href="https://classmate-ai.s3.amazonaws.com/styles.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+    <script src="https://classmate-ai.s3.amazonaws.com/utils.js"></script>
+    <script src="https://classmate-ai.s3.amazonaws.com/events.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="app-name">Classmate.ai</h1>
+                <ul class="nav-links">
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/home.html">Home</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/notes.html">Notes</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/events.html">Events</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/upload.html">Upload</a></li>
+                    <li><a href="https://classmate-ai.s3.amazonaws.com/upload.html">MCQs</a></li>
+                    <li><span id="userName"></span></li>
+                    <li><a href="#" onclick='logout()'>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="ui container">
+        </br>
+        
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="ui sixteen column">
+                <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form id="eventForm">
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required><br>
+    
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required><br>
+    
+            <label for="start">Start Date and Time:</label>
+            <input type="datetime-local" id="start" name="start" required><br>
+    
+            <label for="end">End Date and Time:</label>
+            <input type="datetime-local" id="end" name="end" required><br>
+    
+            <input type="submit" value="Create Event" onclick="addEvent()">
+        </form>
+    </div>
+</body>
+
+  
+  
